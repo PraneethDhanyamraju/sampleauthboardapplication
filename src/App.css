@@ -633,7 +633,7 @@ body{
  @media screen and (max-width: 740px){
   .board-navbar{
     width: auto;
-    height:75vh;
+    height:97vh;
     flex-direction: column;
   }
   .navbar-title{
@@ -688,7 +688,7 @@ body{
    flex-direction: column;
  }
    .board-navbar{
-     height:60vh;
+     height:97vh;
      flex-direction: column;
    }
    .navbar-heading{
@@ -716,7 +716,7 @@ body{
    }
  .schedule{
    width:350px;
-   height: 50vh;
+   height: auto;
  
  }
  

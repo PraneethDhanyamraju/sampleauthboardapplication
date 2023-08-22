@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
-import ReactApexChart from 'react-apexcharts';
+import dynamic from 'next/dynamic'
+    
+const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 export default function PieChart({products})
 
 {
@@ -58,7 +60,7 @@ export default function PieChart({products})
 
 </select>
 </div>
-          <ReactApexChart options={options} series={series} type="pie" height={150}/>
+          <Chart options={options} series={series} type="pie" height={150}/>
         </div>
       );
     

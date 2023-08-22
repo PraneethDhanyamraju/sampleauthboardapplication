@@ -5,9 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
+    
   },
+  "engines": {
+       "node": "18.X"
+  },
+
   "dependencies": {
     "@types/node": "20.5.1",
     "@types/react": "18.2.20",

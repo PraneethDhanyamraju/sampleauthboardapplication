@@ -1,688 +1,741 @@
 body{
- font-family:'Montserrat', sans-serif;
-}
-.App{
-  display:flex;
-  gap: 30px;
-  background: #F5F5F5;
-  
-  
-}
-.google-button:hover,.logout:hover{
-  cursor:pointer;
-}
-html,body{
-  overflow-x:hidden;
-  height: auto;
-}
-
-.navbar-icon{
-  width:13px;
-  height: 13px;
-  margin-right: 15px; 
-}
-.notification{
-  width:18px;
-  height: 20px;
- margin-top:10px;
- margin-right:50px;
-
-}
-.avatar{
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  
- 
-}
-  .board-navbar{
-    width: 250px;
-    height: 95vh;
-    background: #000000;
-    margin:18px;
-    border-radius: 14px;
-}
-
-  .navbar-heading{
-    margin-bottom:30px;
-  }
-  .navbar-title,.navbar-heading,.navbar-footer{
-  color: #FFFFFF;
-  }
-  .navbar-title{
-    text-align: center;
-  }
-  .navbar-title>a{
-    font-size: 14px;
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-  
-  .navbar-links{
-    display: flex;
-    flex-direction: column;
-    gap:30px;
-    flex-basis: 500px;
-  }
-  .board-navbar{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-    
-  }
-  .navbar-title:hover
-{
-  font-weight: 700;
-}
-  .navbar-footer{
-    margin-right: 50px;
-    margin-bottom: 20px;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-  }
-  .navbar-footer a{
-text-decoration: none;
-color: #FFFFFF;  
-}
-input[type='text'] {
-  background-image: url("./components/icons/search.png");
-  background-position: 90% 50%;
-  background-repeat: no-repeat;
-  
-  width: 180px;
-  height: 30px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
- 
-  margin-top:10px;
-  margin-right:25px;
-
-}
-.header-heading{
-  color: #000000;
-  font-weight: 700;
-margin-top: 7px;
-font-size: 24px;  
-flex-basis:850px
-}
-.searchbar{
-  
-}
-.header-container{
-  display: flex;
- justify-content: flex-start;
-  width: 100%;
-flex-wrap: wrap;
-}
-.dashboard-container{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  margin-top: 30px;
-}
-
-.card-container{
-  display: flex;
-  column-gap: 100px;
-  flex-wrap: wrap;
-  row-gap: 20px;
-}
-.card{
-  width:220px;
-  height:120px;
-  color:#000000;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-
- padding: 18px;
- box-sizing: border-box;
-}
-.card-title{
-  font-size: 14px;
-  font-weight: 400px;
-  margin: 5px;
-}
-.cost{
-  font-size: 24px;
-  font-weight: 700;
-  margin: 5px;
-}
-.card>img{
-  align-self: flex-end;
-}
-.card:nth-child(1){
-  background: #DDEFE0;
-}
-.card:nth-child(2){
-  background:#F4ECDD;
-}
-.card:nth-child(3){
-  background: #EFDADA;
-}
-.card:nth-child(4){
-  background:#DEE0EF;
-}
-.title{
-  background: #000000;
-  margin: 0;
-  width: 80vh;
-  height:100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo>h1{
-  font-weight: 700;
-  font-size: 72px;
-  color: #FFFFFF;
-
-}
-.container{
-  display: flex;
-}
-.signin{
-display: flex;
-margin: 0 auto;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width:120vh;
-background-color: #F5F5F5;
-box-sizing: border-box;
-row-gap: 20px;
-}
-.signin-heading{
-  align-self: flex-start;
-  font-size: 36px;
-  font-weight: 700;
-  margin:0;
-  margin-left:300px;
-  
-}
-.signinto{
-  align-self: flex-start;
-  font-size: 16px;
-  font-weight: 400;
-  margin:0;
-  margin-left:300px;
-}
-.btn{
-  align-self: flex-start;
-  margin-top: 20px;
-  margin-left:300px;
-  display: flex;
-  column-gap: 25px;
-}
-.google-button,.apple-button{
-  font-size: 12px;
-  width: 180px;
-  height: 30px;
-  color: #858585;
-  background: #FFFFFF;
-  border: none;
-  border-radius: 8px;
-}
-.google,.apple{
-  margin:10px;
-}
-.signin-content{
-  background: #FFFFFF;
-  width: 385px;
-  height: 375px;
-  margin: 0;
-  align-self: flex-start;
-  margin-top: 10px;
-  margin-left:300px;
- padding: 20px;
- box-sizing: border-box;
- border-radius: 20px;
- display: flex;
- flex-direction: column;
- column-gap: 20px;
-}
-
-
-.email,.password{
-  background: #EAEAEA;
-  outline: none;
-  border: none;
-  width: 325px;
-  height: 40px;
-  border-radius: 8px;
-  padding: 8px;
-}
-.email{
-  background: #F5F5F5;
-
-}
-.weight400{
-  color:#000000;
-  font-weight: 400;
-  margin: 10px;
-}
-.forgot,.register{
-  
-  color:  #346BD4;
-  
-}
-.sign-in-button{
-width: 325px;
-height: 40px;
-font-weight: 400px;
-color: #FFFFFF;
-font-size: 16px;
-border-radius: 8px;
-background-color: #000000;
-}
-.register-content{
-  margin-left:120px;
- 
-
-}
-
-@media screen and (max-width: 1300px) and (min-width:1050px )
-{
-  .register-content{
-  position: absolute;
-  right:50%;
-  top:172%;
-}
-}
-
-@media screen and (max-width: 1300px) and (min-width:1150px )
-{
-  
-  .register-content{
-  position: absolute;
-  right:55%;
-  top:172%;
-}
-}
-@media screen and (max-width: 1050px) and (min-width:700px )
-{
-  .register-content{
-  position: absolute;
-  left:20%;
-  top:172%;
-}
-}
-@media screen and (max-width: 1300px)
-{
-  .container{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
- .signin-content,.signin-heading,.btn,.signinto{
-  margin-left: 200px;
+  font-family:'Montserrat', sans-serif;
  }
- .title{
-  width: 97vw;
- }
-.signin{
-  width: 97vw;
-
-}
-#chart{
-  width: 700px;
-}
- 
-}
-select{
-border: none;
-outline: none;
-color: #858585;
-margin-left :25px  !important; ;
-
-}
-
-#chart{
-  background: #FFFFFF;
-  width: 1180px;
-  border-radius: 12px;
-}
-#piechart,.schedule{
-  background: #FFFFFF;
-  border-radius: 12px; 
-  width:520px;
-  height:210px;
-}
-.piechart-text{
-  
-  margin-top:20px;
-}
-.schedule{
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-
-}
-.piecharttext{
-  display: flex;
-  column-gap: 50px;
-}
-.products-schedule{
-display: flex;
-column-gap: 150px;
-}
-.schedule-header{
-  display: flex;
-  column-gap:70px;
-
-
-}
-.scheduleleft1{
-  background-color: #9BDD7C;
-  width:5px;
-  height:60px;
-  margin:5px;
-}
-
-.scheduleleft2{
-  background-color:#6972C3;
-  width:5px;
-  height:55px;
-  margin:5px;
-}
-.scheduleitem{
-  display:flex;
-  margin-left:20px;
-  row-gap: 5px;
-}
-.scheduleright>p{
-margin:0;
-}
-
-@media screen and (max-width: 1500px)
-{
- 
-  .card-container{
-    column-gap: 25px;
-  }
-  .header-heading{
-    flex-basis: 600px;
-  }
-  #chart{
-    width:1000px;
-  }
-  
-  .products-schedule{
-    column-gap: 80px;
-    }
- .schedule,#piechart{
-  width:75%;
- }
- #piechart,.schedule{
-  width:450px;
- }
-  .cost{
-    font-size: 20px;
-  }
-}@media screen and (max-width:1400px) {
-  #chart{
-    width: 940px;
-  }
-  
- #pichart,.schedule{
-  width:400px;
- }
-}
-@media screen and (max-width:1300px) {
-  .card{
-    width:190px;
-    
-  } 
-  .header-heading{
-    flex-basis:500px;
-  }
-  .card>img{
-    width:20px;
-    height: 20px;
-  
-  }
-  #chart{
-    width: 850px;
-  }
- #piechart,#schedule{
-  width:325px;
- }
-  
-}
-@media screen and (max-width: 1200px){
  .App{
-  flex-direction: column;
+   display:flex;
+   gap: 30px;
+   background: #F5F5F5;
+   
+   
  }
-  .schedule,#piechart{
-    width:350px
+ .board-navbar{
+  row-gap: 20px;
+ }
+ .google-button:hover,.logout:hover{
+   cursor:pointer;
+ }
+ html,body{
+   overflow-x:hidden;
+   height: auto;
+ }
+ 
+ .navbar-icon{
+   width:13px;
+   height: 13px;
+   margin-right: 15px; 
+ }
+ .navbar-title{
+  display: flex;
+  align-items:flex-start;
+  column-gap: 20px;
+ }
+ .notification{
+   width:18px;
+   height: 20px;
+  margin-top:10px;
+  margin-right:50px;
+ 
+ }
+ .avatar{
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   
+  
+ }
+   .board-navbar{
+     width: 250px;
+     height: 95vh;
+     background: #000000;
+     margin:18px;
+     border-radius: 14px;
+ }
+ 
+   .navbar-heading{
+     margin-bottom:30px;
    }
-   .card{
-    width: 175px;
+   .navbar-title,.navbar-heading,.navbar-footer{
+   color: #FFFFFF;
+   }
+   .navbar-title{
+     text-align: center;
+   }
+   .navbar-title>a{
+     font-size: 14px;
+     color: #FFFFFF;
+     text-decoration: none;
+   }
+   .navbar-icon{
+    margin-right:40px;
+   }
+   .link{
+    margin-top:5px;
+    color: #FFFFFF ;
+   }
+   .navbar-links{
+     display: flex;
+     flex-direction: column;
+     gap:30px;
+     flex-basis: 500px;
    }
    .board-navbar{
-    align-items: center;
-    justify-content: center;
-    width: auto; 
-  }
-  #chart{
-    width:1000px;
-  }
-  
-  .card-container{
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  .header-container{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15px;
-  }
-  .products-schedule{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    row-gap: 20px;
-  }
-  #chart{
-    margin: 0 auto;
-  }
- .schedule,#piechart{
-  width:1000px
- }
-    
-  }
-  @media screen and (max-width:1050px){
-    .header-heading{
-      flex-basis: 50px;
-    }
-    .board-navbar{
-      width: auto;
-      flex-direction: row;
-      height:18vh;
-    }
-    .App{
-      gap:0px;
-    }
-    .navbar-links{
-      flex-direction: row;
-    }
-    .navbar-footer{
-      flex-direction: row;
-      column-gap: 10px;
-    }
-    
-    .header-container{
-      flex-direction: column;
-    }
-  }
-  @media screen and (max-width: 1150px){
-    #chart{
-      width:800px;
-    }
-    .navbar-footer{
-      margin:10px;
-    }
-    .navbar-heading{
-      margin: 10px 60px;
-    }
-    .dashboard-container{
-      row-gap: 20px;
-    }
-    .schedule,#piechart{
-      width:800px
-     }
-     .signin-content,.signin-heading,.btn,.signinto{
-      margin-left: 250px;
-     }
- 
-    }
-    @media screen and (max-width: 850px){
-      #chart{
-        width:700px;
-      }
-      .schedule,#piechart{
-        width:600px
-       }
-      
-      }
-@media screen and (max-width: 835px){
-  .header-container{
-  flex-direction: column;
-  }
-  .navbar-heading{
-    margin: 10px 40px;
-  }
-#chart{
-  width:600px;
-}
-
- #piechart{
-  width:600px;
-  height: auto;
-} 
-.schedule{
-  width:600px;
-  height: auto;
-}
-.piecharttext{
-  flex-direction: column;
-  
-}
-.schedule-header{
-  flex-direction: column;
-}
- #select1,#select2{
-  margin-left: 18px;
- }
-}
-
-@media screen and (max-width: 700px){
-  #chart{
-    width: 500px;
-  }
-  .register-content{
-    margin-right: 160px;
-  }
- .signin-content,.signin-heading,.btn,.signinto{
-  margin:0 auto;
- }
-  
-  .notification{
-    right:0%;
-  }
-  .schedule,#piechart{
-    width:500px
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 40px;
+     box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+     letter-spacing: 0em;
+     text-align: left;
+     
    }
-  .hamburger{
-    display: flex !important;
-  }
-  .board-navbar{
-    display: none;
-  }
- #close{
-  display: block !important;
- } 
-}
-
-@media screen and (max-width: 415px){
-  .navbar-links{
-    flex-direction: column;
-
-  }
-  .navbar-heading{
-    padding:20px;
+   .navbar-title:hover
+ {
+   font-weight: 700;
+ }
+   .navbar-footer{
+     margin-right: 50px;
+     margin-bottom: 20px;
+     font-size: 12px;
+     display: flex;
+     flex-direction: column;
+     row-gap: 10px;
+   }
+   .navbar-footer a{
+ text-decoration: none;
+ color: #FFFFFF;  
+ }
+ input[type='text'] {
+   background-image: url("./components/icons/search.png");
+   background-position: 90% 50%;
+   background-repeat: no-repeat;
+   
+   width: 180px;
+   height: 30px;
+   border-radius: 8px;
+   border: none;
+   outline: none;
+  
+   margin-top:10px;
+   margin-right:25px;
+ 
+ }
+ .header-heading{
+   color: #000000;
+   font-weight: 700;
+ margin-top: 7px;
+ font-size: 24px;  
+ flex-basis:850px
+ }
+ .searchbar{
+   
+ }
+ .header-container{
+   display: flex;
+  justify-content: flex-start;
+   width: 100%;
+ flex-wrap: wrap;
+ }
+ .dashboard-container{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   margin-top: 30px;
+ }
+ 
+ .card-container{
+   display: flex;
+   column-gap: 100px;
+   flex-wrap: wrap;
+   row-gap: 20px;
+ }
+ .card{
+   width:220px;
+   height:120px;
+   color:#000000;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+ 
+  padding: 18px;
+  box-sizing: border-box;
+ }
+ .card-title{
+   font-size: 14px;
+   font-weight: 400px;
+   margin: 5px;
+ }
+ .cost{
+   font-size: 24px;
+   font-weight: 700;
+   margin: 5px;
+ }
+ .card>img{
+   align-self: flex-end;
+ }
+ .card:nth-child(1){
+   background: #DDEFE0;
+ }
+ .card:nth-child(2){
+   background:#F4ECDD;
+ }
+ .card:nth-child(3){
+   background: #EFDADA;
+ }
+ .card:nth-child(4){
+   background:#DEE0EF;
+ }
+ .title{
+   background: #000000;
+   margin: 0;
+   width: 80vh;
+   height:100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .logo>h1{
+   font-weight: 700;
+   font-size: 72px;
+   color: #FFFFFF;
+ 
+ }
+ .container{
+   display: flex;
+ }
+ .signin{
+ display: flex;
+ margin: 0 auto;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width:120vh;
+ background-color: #F5F5F5;
+ box-sizing: border-box;
+ row-gap: 20px;
+ }
+ .signin-heading{
+   align-self: flex-start;
+   font-size: 36px;
+   font-weight: 700;
+   margin:0;
+   margin-left:300px;
+   
+ }
+ .signinto{
+   align-self: flex-start;
+   font-size: 16px;
+   font-weight: 400;
+   margin:0;
+   margin-left:300px;
+ }
+ .btn{
+   align-self: flex-start;
+   margin-top: 20px;
+   margin-left:300px;
+   display: flex;
+   column-gap: 25px;
+ }
+ .google-button,.apple-button{
+   font-size: 12px;
+   width: 180px;
+   height: 30px;
+   color: #858585;
+   background: #FFFFFF;
+   border: none;
+   border-radius: 8px;
+ }
+ .google,.apple{
+   margin:10px;
+ }
+ .signin-content{
+   background: #FFFFFF;
+   width: 385px;
+   height: 375px;
+   margin: 0;
+   align-self: flex-start;
+   margin-top: 10px;
+   margin-left:300px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+ }
+ 
+ 
+ .email,.password{
+   background: #EAEAEA;
+   outline: none;
+   border: none;
+   width: 325px;
+   height: 40px;
+   border-radius: 8px;
+   padding: 8px;
+ }
+ .email{
+   background: #F5F5F5;
+ 
+ }
+ .weight400{
+   color:#000000;
+   font-weight: 400;
+   margin: 10px;
+ }
+ .forgot,.register{
+   
+   color:  #346BD4;
+   
+ }
+ .sign-in-button{
+ width: 325px;
+ height: 40px;
+ font-weight: 400px;
+ color: #FFFFFF;
+ font-size: 16px;
+ border-radius: 8px;
+ background-color: #000000;
+ }
+ .register-content{
+   margin-left:120px;
+  
+ 
+ }
+ 
+ @media screen and (max-width: 1300px) and (min-width:1050px )
+ {
+   .register-content{
+   position: absolute;
+   right:50%;
+   top:172%;
+ }
+ }
+ 
+ @media screen and (max-width: 1300px) and (min-width:1150px )
+ {
+   
+   .register-content{
+   position: absolute;
+   right:55%;
+   top:172%;
+ }
+ }
+ @media screen and (max-width: 1050px) and (min-width:700px )
+ {
+   .register-content{
+   position: absolute;
+   left:20%;
+   top:172%;
+ }
+ }
+ @media screen and (max-width: 1300px)
+ {
+   .container{
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+   }
+  .signin-content,.signin-heading,.btn,.signinto{
+   margin-left: 200px;
   }
   .title{
-    height: 20vh;
+   width: 97vw;
   }
-.navbar-footer{
-  flex-direction: column;
-}
+ .signin{
+   width: 97vw;
+ 
+ }
+ #chart{
+   width: 700px;
+ }
+  
+ }
+ select{
+ border: none;
+ outline: none;
+ color: #858585;
+ margin-left :25px  !important; ;
+ 
+ }
+ 
+ #chart{
+   background: #FFFFFF;
+   width: 1180px;
+   border-radius: 12px;
+ }
+ #piechart,.schedule{
+   background: #FFFFFF;
+   border-radius: 12px; 
+   width:520px;
+   height:210px;
+ }
+ .piechart-text{
+   
+   margin-top:20px;
+ }
+ .schedule{
+   padding: 20px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+ 
+ }
+ .piecharttext{
+   display: flex;
+   column-gap: 50px;
+ }
+ .products-schedule{
+ display: flex;
+ column-gap: 150px;
+ }
+ .schedule-header{
+   display: flex;
+   column-gap:70px;
+ 
+ 
+ }
+ .scheduleleft1{
+   background-color: #9BDD7C;
+   width:5px;
+   height:60px;
+   margin:5px;
+ }
+ 
+ .scheduleleft2{
+   background-color:#6972C3;
+   width:5px;
+   height:55px;
+   margin:5px;
+ }
+ .scheduleitem{
+   display:flex;
+   margin-left:20px;
+   row-gap: 5px;
+ }
+ .scheduleright>p{
+ margin:0;
+ }
+ 
+ @media screen and (max-width: 1500px)
+ {
+  
+   .card-container{
+     column-gap: 25px;
+   }
+   .header-heading{
+     flex-basis: 600px;
+   }
+   #chart{
+     width:1000px;
+   }
+   
+   .products-schedule{
+     column-gap: 80px;
+     }
+  .schedule,#piechart{
+   width:75%;
+  }
+  #piechart,.schedule{
+   width:450px;
+  }
+   .cost{
+     font-size: 20px;
+   }
+ }@media screen and (max-width:1400px) {
+   #chart{
+     width: 940px;
+   }
+   
+  #pichart,.schedule{
+   width:400px;
+  }
+ }
+ @media screen and (max-width:1300px) {
+   .card{
+     width:190px;
+     
+   } 
+   .card>img{
+     width:20px;
+     height: 20px;
+   
+   }
+   #chart{
+     width: 850px;
+   }
+  #piechart,#schedule{
+   width:325px;
+  }
+   
+ }
+ @media screen and (max-width: 1200px){
+  .App{
+   flex-direction: column;
+  }
   .board-navbar{
-    height:60vh;
+    width: auto;
+    height:85vh;
     flex-direction: column;
   }
   .navbar-heading{
-    margin:10px 40px;
+    font-size: 25px;;
   }
-  #chart{
-    width: 450px;
+  .navbar-footer{
+    margin-top:20px
   }
-  .google-button,.apple-button{
-    width:160px;
+  .navbar-title{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .signin{
-    height:auto;
-    justify-content: flex-start;
+  .navbar-links{
+    flex-direction: column;
   }
- #piechart{
-  width:350px;
-  height: auto;
-} 
-#chart{
-  width:350px;
+  .header-heading{
+    flex-basis:50px;
   }
-  .navbar-heading{
-    margin:20px;
+   .schedule,#piechart{
+     width:350px
+    }
+    .card{
+     width: 175px;
+    }
+    .board-navbar{
+     align-items: center;
+     justify-content: center;
+     width: auto; 
+   }
+   #chart{
+     width:1000px;
+   }
+   
+   .card-container{
+     align-items: center;
+     justify-content: center;
+   }
+   
+   
+   .header-container{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-left: 15px;
+   }
+   .products-schedule{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: auto;
+     row-gap: 20px;
+   }
+   #chart{
+     margin: 0 auto;
+   }
+  .schedule,#piechart{
+   width:1000px
   }
-.schedule{
-  width:350px;
-  height: 50vh;
+     
+   }
+   @media screen and (max-width:1050px){
+     .header-heading{
+       flex-basis: 50px;
+     }
+     .navbar-title{
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 10px;
+     }
+     .board-navbar{
+       width: auto;
+       flex-direction: row;
+       height:18vh;
+     }
+     .App{
+       gap:0px;
+     }
+     .navbar-links{
+       flex-direction: row;
+     }
+     .navbar-footer{
+       flex-direction: row;
+       column-gap: 10px;
+     }
+     
+     .header-container{
+       flex-direction: column;
+     }
+   }
+   @media screen and (max-width: 1150px){
+     #chart{
+       width:800px;
+     }
+     .navbar-footer{
+       margin:10px;
+     }
+     .navbar-heading{
+       margin: 10px 60px;
+     }
+     .dashboard-container{
+       row-gap: 20px;
+     }
+     .schedule,#piechart{
+       width:800px
+      }
+      .signin-content,.signin-heading,.btn,.signinto{
+       margin-left: 250px;
+      }
+  
+     }
+     @media screen and (max-width: 850px){
+       #chart{
+         width:700px;
+       }
+       .schedule,#piechart{
+         width:600px
+        }
+       
+       }
+ @media screen and (max-width: 835px){
+   .header-container{
+   flex-direction: column;
+   }
+   .navbar-heading{
+     margin: 10px 40px;
+   }
+ #chart{
+   width:600px;
+ }
+ 
+  #piechart{
+   width:600px;
+   height: auto;
+ } 
+ .schedule{
+   width:600px;
+   height: auto;
+ }
+ .piecharttext{
+   flex-direction: column;
+   
+ }
+ .schedule-header{
+   flex-direction: column;
+ }
+  #select1,#select2{
+   margin-left: 18px;
+  }
+ }
+ @media screen and (max-width: 740px){
+  .board-navbar{
+    width: auto;
+    height:75vh;
+    flex-direction: column;
+  }
+  .navbar-title{
+    flex-direction: row;
 
-}
+  }
+  .navbar-links{
+    flex-direction: column;
+  }
 
-}
-.hamburger{
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-.hamburger>div{
-  width:75px;
-  height:15px;
-  background:#000000;
-  margin-top:5px;
-}
-.toggle{
+  }
+ @media screen and (max-width: 700px){
+   #chart{
+     width: 500px;
+   }
+   .register-content{
+     margin-right: 160px;
+   }
+  .signin-content,.signin-heading,.btn,.signinto{
+   margin:0 auto;
+  }
+   
+   .notification{
+     right:0%;
+   }
+   .schedule,#piechart{
+     width:500px
+    }
+   .hamburger{
+     display: flex !important;
+   }
+   .board-navbar{
+     display: none;
+   }
+  #close{
+   display: block !important;
+  } 
+ }
+ 
+ @media screen and (max-width: 415px){
+   .navbar-links{
+     flex-direction: column;
+ 
+   }
+   .navbar-heading{
+     padding:20px;
+   }
+   .title{
+     height: 20vh;
+   }
+ .navbar-footer{
+   flex-direction: column;
+ }
+   .board-navbar{
+     height:60vh;
+     flex-direction: column;
+   }
+   .navbar-heading{
+     margin:10px 40px;
+   }
+   #chart{
+     width: 450px;
+   }
+   .google-button,.apple-button{
+     width:160px;
+   }
+   .signin{
+     height:auto;
+     justify-content: flex-start;
+   }
+  #piechart{
+   width:350px;
+   height: auto;
+ } 
+ #chart{
+   width:350px;
+   }
+   .navbar-heading{
+     margin:20px;
+   }
+ .schedule{
+   width:350px;
+   height: 50vh;
+ 
+ }
+ 
+ }
+ .hamburger{
   display: flex;
-}
-
-#hamb,#close{
-  display: none;
-}
+  flex-direction: column;
+  align-items: center;
+ }
+ .hamburger>div{
+   width:75px;
+   height:15px;
+   background:#000000;
+   margin-top:5px;
+ }
+ .toggle{
+   display: flex;
+ }
+ 
+ #hamb,#close{
+   display: none;
+ }

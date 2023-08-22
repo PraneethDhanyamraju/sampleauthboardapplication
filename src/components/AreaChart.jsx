@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import ReactApexChart from 'react-apexcharts';
-  export default function AreaChart({activites})
+import dynamic from 'next/dynamic'
+    
+const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
+export default function AreaChart({activites})
   {
     const [selected,setSelected]=useState("0");
     const[guests,setGuests]=useState(  [100,430,140,450,160,260])
@@ -68,7 +70,11 @@ useEffect(()=>{
        
       }
         
-     return <div id="chart">
+     return<div>   
+      {(typeof window !== 'undefined') &&
+
+
+     <div id="chart">
     <p style={{fontWeight:700,color:"#000000",fontSize:"18px",margin:"0",marginLeft:"30px",marginTop:"25px"
 }}>Activites</p>
     <select style={{margin:"0",marginLeft:"25px"}} value={selected} onChange={(event)=>{setSelected(event.target.value)
@@ -80,7 +86,9 @@ useEffect(()=>{
       <option value="2">July - August 2021</option>
     
     </select>
-  <ReactApexChart options={options} series={series} type="line"  height={200}/>
+  <Chart options={options} series={series} type="line"  height={200}/>
+</div>
+  }
 </div>
 ;
   }

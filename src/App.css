@@ -302,38 +302,6 @@ body{
  border-radius: 8px;
  background-color: #000000;
  }
- .register-content{
-   margin-left:120px;
-  
- 
- }
- 
- @media screen and (max-width: 1300px) and (min-width:1050px )
- {
-   .register-content{
-   position: absolute;
-   right:50%;
-   top:172%;
- }
- }
- 
- @media screen and (max-width: 1300px) and (min-width:1150px )
- {
-   
-   .register-content{
-   position: absolute;
-   right:55%;
-   top:172%;
- }
- }
- @media screen and (max-width: 1050px) and (min-width:700px )
- {
-   .register-content{
-   position: absolute;
-   left:20%;
-   top:172%;
- }
- }
  @media screen and (max-width: 1300px)
  {
    .container{
@@ -341,9 +309,7 @@ body{
      justify-content: center;
      flex-direction: column;
    }
-  .signin-content,.signin-heading,.btn,.signinto{
-   margin-left: 200px;
-  }
+  
   .title{
    width: 97vw;
   }
@@ -422,7 +388,9 @@ body{
  .scheduleright>p{
  margin:0;
  }
- 
+ .register-content{
+  margin-left: 120px;
+ }
  @media screen and (max-width: 1500px)
  {
   
@@ -462,6 +430,12 @@ body{
      width:190px;
      
    } 
+   .register-content{
+    margin-left:0;
+   }
+   .signin-content,.signin-heading,.btn,.signinto{
+    margin:0 auto;
+   }
    .card>img{
      width:20px;
      height: 20px;
@@ -589,9 +563,7 @@ body{
      .schedule,#piechart{
        width:800px
       }
-      .signin-content,.signin-heading,.btn,.signinto{
-       margin-left: 250px;
-      }
+     
   
      }
      @media screen and (max-width: 850px){
@@ -641,6 +613,8 @@ body{
   }
   .navbar-title{
     flex-direction: row;
+    justify-content: flex-start
+    
 
   }
   .navbar-links{
@@ -652,9 +626,7 @@ body{
    #chart{
      width: 500px;
    }
-   .register-content{
-     margin-right: 160px;
-   }
+  
   .signin-content,.signin-heading,.btn,.signinto{
    margin:0 auto;
   }

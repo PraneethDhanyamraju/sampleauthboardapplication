@@ -5,7 +5,7 @@ export default function Schedule({schedules}){
         <div className="schedule-header">
     <p style={{fontWeight:700,color:"#000000",fontSize:"18px",marginLeft:"20px"
 }}>Today's Schedule</p>
-<p style={{color:"#858585",fontSize:"12px"}} id="select2">See All <span>;&gt</span> </p>
+<p style={{color:"#858585",fontSize:"12px"}} id="select2">See All <span>&gt;</span> </p>
 </div>
 <div className="schedulelist">
     <div className="scheduleitem">

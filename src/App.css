@@ -8,6 +8,9 @@ body{
    
    
  }
+.link{
+  curosor:pointer;
+}
  .board-navbar{
   row-gap: 20px;
  }

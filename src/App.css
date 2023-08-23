@@ -9,7 +9,7 @@ body{
    
  }
 .link{
-  curosor:pointer;
+  cursor:pointer;
 }
  .board-navbar{
   row-gap: 20px;
